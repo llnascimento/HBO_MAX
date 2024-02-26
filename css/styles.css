@@ -1,0 +1,213 @@
+body{
+    background: rgb(1,1,1);
+    background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(27,6,47,1) 100%, rgba(241,241,241,1) 100%, rgba(241,241,241,1) 100%);
+   
+    margin: 0;
+}
+
+#cabecalo{
+  height: 70px;
+  background-color: #00000066;
+  width: 100%;
+  display: inline-flex;
+}
+
+#logo{
+    height: 37px;
+    width: 120px;
+    margin-left: 46%;
+    margin-top: 10px;
+    
+}
+
+.entrar{
+    height: 70px;
+    padding-top: 18px;
+    padding-left: 40%;
+    
+}
+
+#login{
+    font-size: 12px;
+    color: #BAC7FF;
+    font-family: 'gil' , sans-serif;
+    text-decoration: none;
+}
+
+.Passos{
+    font-size: 16px;
+    color: white;
+    font-family: 'gil' , sans-serif;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.titulo{
+    font-size: 32px;
+    color: white;
+    font-family: 'gil' , sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sub{
+    margin: auto;
+    width: 862px;
+    font-size: 14px;
+    color: white;
+    font-family: 'gil' , sans-serif;
+    text-align: center;
+    line-height: 25px;
+}
+
+.multi1{
+    width: 383px;
+    height: 475px;
+    border-radius: 2%;
+    border: 0.25px solid rgba(255, 255, 255, 0.161);
+    background-color: rgba(255, 255, 255, 0.075);
+    color: white;
+    display: inline-block;
+}
+
+.multi2{
+    width: 383px;
+    height: 475px;
+    border-radius: 2%;
+    border: 0.25px solid rgba(255, 255, 255, 0.161);
+    background-color: rgba(255, 255, 255, 0.075);
+    color: white;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.padrao{
+    font-size: 24px;
+    color: white;
+    font-family: 'gil' , sans-serif;
+    margin-top: 40px;
+    margin-left: 35px;
+    letter-spacing: 1px;
+}
+
+.valor{
+    font-size: 24px;
+    color: white;
+    font-family: 'gil' , sans-serif;
+    margin-left: 35px;
+}
+
+.tempo{
+    color: #FFFFFFBF ;
+    font-size: 18px;
+}
+
+.detalhes{
+    color: #FFFFFFBF ;
+    font-size: 14px;
+    margin-top: 40px;
+    font-family: 'gil' , sans-serif;
+    margin-left: 35px;
+}
+
+.material-symbols-outlined{
+    font-size: smaller;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.preco{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.linha{
+    margin: auto;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    width: 325px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.ico{
+    font-size: large;
+    font-family: 'gil' , sans-serif;
+    display: flex;
+    margin-left:35px ;
+
+}
+
+.subtexto{
+    font-size: 14px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.comprar{
+    background-color: #7B2ABF;
+    border-radius: 25px;
+    border: solid #7B2ABF;
+    color: white;
+    width: 250px;
+    height: 46px;
+    font-size: 9px;
+    font-family:  'gil' , sans-serif;
+    text-align: center;
+
+}
+.multi3{
+    width: 383px;
+    height: 475px;
+    border-radius: 2%;
+    border: 0.25px solid rgba(255, 255, 255, 0.161);
+    background-color: rgba(255, 255, 255, 0.075);
+    color: white;
+    margin-top: 25px;
+}
+
+.rodape{
+    width: 100%;
+    height: 100px;
+    background-color: #030328CC;
+    color: #9E86FF;
+    font-size: 14px;
+    font-family:  'gil' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.termos{
+    margin-left: 15px;
+}
+
+.info{
+    margin-left: 15px;
+}
+
+
+.idioma{
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+
+
+@font-face {
+    font-family: 'gil';
+    src: url('Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
