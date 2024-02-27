@@ -82,9 +82,9 @@ a {
 
 .cabecalho{
     height: 70px;
-    background-color: #00000066;
     width: 100%;
     display: flex;
+    position: absolute;
 }
 
 .menuzinho{
@@ -117,7 +117,7 @@ a {
 .logo{
     margin-top: 5px;
     margin: auto;
-    margin-right: 30%;
+
 }
 
 .assinar{
@@ -150,6 +150,168 @@ a {
     margin-top: 15px;
     margin-right: 20px;
 }
+
+.titulo{
+    margin-top: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'gil' , sans-serif;
+}
+
+.fundo{
+    width: 800px;
+    height: 550px;
+    margin: auto;
+    border: 0.25px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.068);
+    border-radius: 8px;
+}
+
+.subtitulo{
+    font-family: 'gil' , sans-serif;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 26px;
+    padding-top: 25px;
+}
+
+.enderecoemail{
+    width: 95%;
+    height: 45px;
+    border-radius: 5px;
+    border: 0.25px solid rgba(255, 255, 255, 0.161);
+    background-color: rgba(255, 255, 255, 0.075);
+    padding-left: 10px;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #ffffff7b;
+    font-size: 18px;
+    font-family: 'gil' , sans-serif;
+}
+
+.enderecocaixa{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.passwordcaixa{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.password{
+    width: 95%;
+    height: 45px;
+    border-radius: 5px;
+    border: 0.25px solid rgba(255, 255, 255, 0.161);
+    background-color: rgba(255, 255, 255, 0.075);
+    padding-left: 10px;
+    color: #fff;
+
+}
+
+.btn_entrar{
+    width: 100px;
+    height: 45px;
+    color: #ffffffc7;
+    background-color: #ffffff36;
+    border: #ffffff36;
+    border-radius: 8px;
+    padding-bottom: 45px;
+    margin-left: 25px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.btn_entrar:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.Help{
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+.help_a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 40px;
+    color: #9181f8;
+    font-family: 'gil' , sans-serif;
+}
+
+.linha1{
+    width: 350px;
+    background-color: #fff;
+    height: 1px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.linha2{
+    width: 350px;
+    background-color: #fff;
+    height: 1px;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.ou{
+    color: #fff;
+    display: inline-block;
+    font-family: 'gil' , sans-serif;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape_forms{
+    margin-top: 50px;
+}
+
+.rodape_provedor{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'gil' , sans-serif;
+    margin-left: 25px;
+}
+
+.btn_provedor{
+    width: 200px;
+    border-radius: 5px;
+    border: 0.25px solid rgba(255, 255, 255, 0.161);
+    background-color: rgba(255, 255, 255, 0.075);
+    height: 50px;
+    margin-left: 25px;
+    
+}
+
+.btn_provedor:hover{
+    background-color: black;
+    color: #fff;
+    border: 0.25px solid #fff;
+}
+
+.a_provedor{
+    color: #ffffff;
+}
+
+.footer_p{
+    color: #9181f8;
+}
+
+.footer_p:hover{
+    text-decoration: underline  #9181f8;
+}
+
+
 
 
 @font-face {
