@@ -72,6 +72,11 @@ body{
     
 }
 
+.btn-a-assinar:hover{
+    text-decoration: none;
+    color: black;
+}
+
 
 a {
     color: white;
@@ -115,7 +120,7 @@ a {
 }
 
 .logo{
-    margin-top: 5px;
+    padding-top: 10px;
     margin: auto;
 
 }
@@ -137,6 +142,7 @@ a {
 .assinar:hover{
     color: black;
     background-color: #fff;
+
 }
 
 .entrar{

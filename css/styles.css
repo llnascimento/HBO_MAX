@@ -1,7 +1,6 @@
 body{
     background: rgb(1,1,1);
     background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(27,6,47,1) 100%, rgba(241,241,241,1) 100%, rgba(241,241,241,1) 100%);
-   
     margin: 0;
 }
 
@@ -9,22 +8,29 @@ body{
   height: 70px;
   background-color: #00000066;
   width: 100%;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+ 
+}
+#logo{
+    padding-top: 5px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
 }
 
-#logo{
-    height: 37px;
-    width: 120px;
-    margin-left: 46%;
-    margin-top: 10px;
-    
-}
 
 .entrar{
+    position: absolute;
     height: 70px;
+    padding-right: 10px;
     padding-top: 18px;
-    padding-left: 40%;
-    
+    top: 0;
+    right: 0;
+   
 }
 
 #login{
@@ -32,6 +38,7 @@ body{
     color: #BAC7FF;
     font-family: 'gil' , sans-serif;
     text-decoration: none;
+
 }
 
 .Passos{
@@ -202,6 +209,11 @@ body{
 .idioma{
     margin-top: 12px;
     margin-left: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 
