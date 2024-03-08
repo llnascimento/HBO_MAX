@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
     <link rel="stylesheet" href="css/login.css">
     <link rel="shortcut icon" href="ico/hbo_icone.ico" type="image/x-icon">
-    <title>Entrar</title>
+    <title>Login</title>
+
 </head>
 <body>
+
     <header>
 
         <div class="cabecalho">
@@ -96,6 +98,8 @@
         
     </header>
     <br><br><br><br>
+    
+
     <main>
         <div class="titulo">
             <h2>Entrar</h2>
@@ -103,33 +107,35 @@
 
         <div class="fundo">
             <br>
-            <form>
+            
                 <p class="subtitulo">Você tem uma conta da HBO Max?</p>
                 <div class="enderecocaixa">
-                    <input class="enderecoemail" type="text" placeholder="Endereço de email" name="email" required>  <br>
+                    <input class="enderecoemail" id="email" type="text" placeholder="Endereço de email" name="email" required>  <br>
                 </div>
                 <div class="passwordcaixa">
-                    <input class="password" type="password" placeholder="Senha" name="password" required>  <br>
+                    <input class="password" id="senha" type="password" placeholder="Senha" name="password" required>  <br>
                 </div>
                
-                <button class="btn_entrar" type="submit"><h3>Entrar</h3></button>   
+                <button class="btn_entrar" id="butao" type="submit"><h3>Entrar</h3></button>  
                 <h4 class="Help"><a href="#" class="help_a">Esqueceu a Senha?</a></h4>
-            </form>
-
-            <div class="center">
-                <div class="linha1"></div>
-                <div class="ou"><h4>OU</h4></div>
-                <div class="linha2"></div>
+          
+                <div class="center">
+                    <div class="linha1"></div>
+                    <div class="ou"><h4>OU</h4></div>
+                    <div class="linha2"></div>
+                </div>
+    
+    
+                <div class="rodape_forms">
+                    <p class="rodape_provedor">Você acessa a HBO Max por outra empresa, como um provedor de TV, de celular ou de internet?</p>
+                    <button class="btn_provedor"><h4><a href="#" class="a_provedor">Entrar com Provedor</a></h4></button>
+    
+                </div>
             </div>
+            <br><br>
+    
 
 
-            <div class="rodape_forms">
-                <p class="rodape_provedor">Você acessa a HBO Max por outra empresa, como um provedor de TV, de celular ou de internet?</p>
-                <button class="btn_provedor"><h4><a href="#" class="a_provedor">Entrar com Provedor</a></h4></button>
-
-            </div>
-        </div>
-        <br><br>
     </main>
 
     <footer>
@@ -142,11 +148,7 @@
         <br><br>
     </footer>
 
-    
-   
 
-
-
+    <script src="js/Login.js"></script>
 </body>
-<script src="js/scriptLogin.js"></script>
 </html>
