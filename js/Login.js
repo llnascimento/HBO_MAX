@@ -54,11 +54,19 @@ fetch(apiUrl, configuracao)
 })
 .then(({ dadosRecebidos, response }) => {
   console.log('Resposta do servidor:', dadosRecebidos);
-  if (dadosRecebidos.errors) {
+
+  if (dadosRecebidos.errors) 
+  {
     console.error('Detalhes do erro de validação:', dadosRecebidos.errors);
-  } else if (response.status === 200) {
+  } 
+  
+  else if (response.status === 200) 
+  {
+    window.location.href = "catalago.html"
     alert("Requisição bem-sucedida!");
-  } else {
+  } 
+  else 
+  {
     alert("Erro na requisição. Detalhes: " + dadosRecebidos);
   }
 })
