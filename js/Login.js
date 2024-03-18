@@ -1,27 +1,26 @@
 // Metodo get 
-function metodoget()
-{
+function metodoget() {
   const apiUrl = "http://hbomax.somee.com/max/api/Usuario/buscarTodos"
   const resultadoElement = document.getElementById("resultadoget")
 
 
 
   fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`Erro na requisição: ${response.statusText}`);
-    }
-    return response.json();
-  })
-  .then(data => {
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Erro na requisição: ${response.statusText}`);
+      }
+      return response.json();
+    })
+    .then(data => {
 
-    const primeiroUsuario = data[0]
-    resultadoElement.textContent = primeiroUsuario.nome
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Erro:', error);
-  });
+      const primeiroUsuario = data[0]
+      resultadoElement.textContent = primeiroUsuario.nome
+      console.log(data);
+    })
+    .catch(error => {
+      console.error('Erro:', error);
+    });
 
 }
 
@@ -46,33 +45,58 @@ function handleClick() {
   };
 
   // Faz a requisição usando o fetch
-  // Faz a requisição usando o fetch
-fetch(apiUrl, configuracao)
-.then(response => {
-  console.log('Status da resposta:', response.status);
-  return response.text().then(dadosRecebidos => ({ dadosRecebidos, response }));
-})
-.then(({ dadosRecebidos, response }) => {
-  console.log('Resposta do servidor:', dadosRecebidos);
+  fetch(apiUrl, configuracao)
+  .then(response => {
+    console.log('Status da resposta:', response.status);
+    if (!response.ok) {
+      // Se houver um erro HTTP, retornamos a resposta como texto
+      return response.text().then(texto => {
+        throw new Error(texto); // Lançamos um erro com a mensagem de texto
+      });
+    }
+    // Se não houver erro, retornamos a resposta como JSON
+    return response.json().then(dadosRecebidos => ({ dadosRecebidos, response }));
+  })
 
-  if (dadosRecebidos.errors) 
-  {
+.then(({ dadosRecebidos, response }) => {
+
+  if (dadosRecebidos.errors) {
     console.error('Detalhes do erro de validação:', dadosRecebidos.errors);
-  } 
-  
-  else if (response.status === 200) 
-  {
-    window.location.href = "catalago.html"
-    alert("Requisição bem-sucedida!");
-  } 
-  else 
-  {
+  }
+
+  else if (response.status === 200) {
+
+    if (dadosRecebidos.nome !== undefined) {
+      
+      console.log(dadosRecebidos)
+
+      const nomeRecebido = dadosRecebidos.nome;
+      // Salvar o nome na localStorage
+      localStorage.setItem('nome', nomeRecebido);
+
+      console.log("Seu nome é:", nomeRecebido); // Local
+
+      window.location.href = "perfil.html"
+      alert("Requisição bem-sucedida!");
+    }
+
+    else {
+      alert("Tente novamente")
+    }
+
+  }
+
+  else {
     alert("Erro na requisição. Detalhes: " + dadosRecebidos);
   }
+
 })
-.catch(erro => {
-  console.error('Erro durante a requisição:', erro);
-});
+
+  .catch(erro => {
+
+    console.error('Erro durante a requisição:', erro);
+    alert("Erro na requisição: " + erro.message); // Exibir a mensagem de erro
+  });
 
 }
 

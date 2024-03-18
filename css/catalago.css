@@ -3,6 +3,7 @@ body{
     background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(27,6,47,1) 100%, rgba(241,241,241,1) 100%, rgba(241,241,241,1) 100%);
     margin: 0;
     padding: 0;
+    color: #fff;
 }
 
 header{
@@ -86,6 +87,7 @@ a {
 
 .logo{
     margin-top: 15px;
+    margin-left: 50px;
 }
 
 #user{
@@ -94,7 +96,7 @@ a {
 
 .user{
     margin-top: 15px;
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 .menuzin{

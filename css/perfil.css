@@ -1,0 +1,44 @@
+body{
+    background: rgb(1,1,1);
+    background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(27,6,47,1) 100%, rgba(241,241,241,1) 100%, rgba(241,241,241,1) 100%);
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.card {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /*1*/
+    border: 5px solid transparent; /*2*/
+    background: linear-gradient(179deg, rgb(113, 24, 157) 0%, rgba(121,23,70,1) 85%) border-box; /*3*/
+    -webkit-mask: /*4*/
+       linear-gradient(#fff 0 0) padding-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+    margin-top: 25px;
+    /*
+    border: solid 3px  ;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(179deg, rgb(113, 24, 157) 0%, rgba(121,23,70,1) 85%); 
+    border-radius: 10px;
+*/
+}
+
+.casa_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
