@@ -9,7 +9,6 @@
     <title>Perfil</title>
 </head>
 <body>
-
     <header>
         <!--Cabeçalho - logo-->
         <div class="logo">
@@ -46,16 +45,46 @@
 
     </header>
 
+    
     <main>
         <!-- Corpo -->
 
         <h1>Quem está assistindo?</h1>
 
         <div class="casa_card">
-            <div class="card"></div>
+
+            <div class="caixa_card">
+                <div class="card">
+
+                </div>
+                <div class="perfil_img">
+                    <img class="foto_perfil " id="card_perfil" src="image/Jake_teste.png" alt="Foto de Perfil">
+                </div>
+                <div class="texto">
+                    <p class="txt_name" id="txt_nome"></p>
+                </div>
+            </div>
+
+
         </div>
 
+        <div class="casa_btn">
+            <button class="btn_add_maior">
+                <h3 class="h3_add"><span class="material-symbols-outlined">add</span> <span class="txt_add">ADULTO</span></h3> 
+            </button>
+
+            <button class="btn_add_menor">
+                <h3 class="h3_add"><span class="material-symbols-outlined">add</span> <span class="txt_add">CRIANÇA</span></h3> 
+            </button>
+        </div>
+
+        <h3 class="perfil">Gerenciar Perfis</h3>
+
+
     </main>
-    
+
+
+    <script src="js/Login.js"></script>
+    <script src="js/perfil.js"></script>
 </body>
 </html>

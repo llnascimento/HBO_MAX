@@ -29,16 +29,85 @@ h1{
     -webkit-mask-composite: xor; /*5'*/
             mask-composite: exclude; /*5*/
     margin-top: 25px;
-    /*
-    border: solid 3px  ;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(179deg, rgb(113, 24, 157) 0%, rgba(121,23,70,1) 85%); 
-    border-radius: 10px;
-*/
 }
 
 .casa_card{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.card2{
+    margin-left: 10px;
+}
+
+.txt_name{
+    font-size: 22px;
+    text-align: center;
+}
+
+.btn_add_maior{
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #ffffff36;
+    border: solid #ffffff00 ;
+    color: #fff;
+}
+.btn_add_menor{
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #ffffff36;
+    border: solid #ffffff00 ;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.btn_add_maior:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.btn_add_menor:hover{
+    color: black;
+    background-color: #fff;
+}
+
+.casa_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.perfil{
+    text-align: center;
+    color: #9181f8;
+    margin-top: 25px;
+}
+
+.foto_perfil{
+    width: 151px;
+    height: 173px;
+    position: absolute;
+    top: 0;
+    margin-top: 215px;
+}
+
+.perfil_img{
+    text-align: center;
+    width: 115px;
+}
+
+.txt_add{
+    position: absolute;
+    margin-top: 3px;
+}
+
+.h3_add{
+    position: absolute;
+    margin-left: 40px;
+    top: 0;
+    margin-top: 550px;
 }
