@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste</title>
+  <link rel="stylesheet" href="css/framework/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- i will provide this in description  -->
+  <link rel="stylesheet" href="css/framework/slick.css" />
+  <link rel="stylesheet" href="css/framework/slick-theme.css" />
+  <link rel="stylesheet" href="css/framework/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/framework/animate.min.css" />
+  <link rel="stylesheet" href="css/framework/magnific-popup.css" />
+  <link rel="stylesheet" href="css/framework/select2.min.css" />
+  <link rel="stylesheet" href="css/framework/select2-bootstrap4.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+  <link rel="stylesheet" href="css/framework/slick-animation.css" />
+  <link rel="shortcut icon" href="ico/hbo_icone.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/catalogo.css" />
+</head>
+<body>
+
+  <!--Começo cabeçalho-->
+  <header>
+
+    <div class="menuzin">
+      <!--Menu-->
+      <nav class="menu">
+
+        <input type="checkbox" class="menu-faketrigger" />
+
+        <div class="menu-lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Séries</a></li>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Originais</a></li>
+          <li><a href="#">Adicionados <br> Recentemente</a></li>
+          <li><a href="#">Últimos Dias</a></li>
+          <li><a href="#">Em Breve</a></li>
+          <li><a href="#">Em Alta</a></li>
+          <li><a href="#">Aproveite grátis</a></li>
+        </ul>
+
+      </nav>
+    </div>
+
+    <!--Logo-->
+
+    <div class="logo">
+      <a href="catalago.html">
+        <svg version="1.1" x="0px" y="0px" width="120" height="52" viewBox="0 0 6020 1000"
+          enable-background="new 0 0 6020 1000" xml:space="preserve" class="ce__Header__headerImage"
+          aria-label="HBO Max">
+          <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M713.3,995.6H447.2V616.1H274.9v379.5H2.3V16.4h272.6v365.3
+                h172.3V16.4h266.1V995.6L713.3,995.6z M1933.6,1000c272.6,0,495.1-226.8,495.1-502.7C2428.7,217,2206.2,0,1933.6,0
+                c-275.9,0-415.5,200.7-449.3,282.4c0-121-121.1-266.1-261.7-266.1H767.9v979.3H1191c172.3,0,293.3-147.2,293.3-275.9
+                C1522.5,799.3,1657.7,1000,1933.6,1000L1933.6,1000z M1157.2,602c39.2,0,70.9,38.2,70.9,81.8c0,45.8-31.6,84-70.9,84H1022V602
+                H1157.2L1157.2,602z M1157.2,234.5c39.2,0,70.9,38.2,70.9,81.8s-31.6,81.8-70.9,81.8H1022V234.5H1157.2L1157.2,234.5z M1336,497.3
+                c31.6-2.2,82.9-38.2,102.5-60c-7.6,26.2-7.6,109.1,0,135.2C1416.7,540.9,1367.6,502.7,1336,497.3L1336,497.3z M1685,497.3
+                c0-137.9,112.1-249.5,250.2-248.6c138.5,0.8,249,113.7,247,252.3c-2,136.7-112.5,246-248.6,246C1796.2,747,1685,635.8,1685,497.3
+                L1685,497.3z M1933.6,693.6c105.8,0,195.2-87.2,195.2-196.3s-89.4-195.2-195.2-195.2c-109.1,0-196.3,86.2-196.3,195.2
+                C1737.3,606.3,1824.5,693.6,1933.6,693.6L1933.6,693.6z"></path>
+            <g>
+              <path fill="#FFFFFF" d="M3851,363c-5.5-237.3-173-362.9-378.9-362.9c-113.1,0-214.6,37.9-284,111.4
+                    C3118.7,37.9,3017.2,0,2904.2,0c-206,0-373.6,125.8-378.9,363.4c-0.1,0.5-0.1,1-0.1,1.6v541c0,49.7,40.3,90,90,90h85
+                    c8.3,0,15-6.7,15-15V365h0.1c3.6-117,86.8-179,188.9-179c102.1,0,185.3,62,188.9,179h0.1v541c0,49.7,40.3,90,90,90h85
+                    c8.3,0,15-6.7,15-15V365h0.1c3.6-117,86.8-179,188.9-179c102.1,0,185.3,62,188.9,179h0.1v541c0,49.7,40.3,90,90,90h85
+                    c8.3,0,15-6.7,15-15V365C3851.2,364.3,3851.1,363.6,3851,363z"></path>
+              <path fill="#FFFFFF" d="M5765,16h-144.2c-39.9,0-77.2,19.8-99.5,52.9l-159.4,236.4c-20.8,30.9-66.2,30.9-87,0L5115.5,68.9
+                    C5093.2,35.8,5055.9,16,5016,16h-144.2c-9,0-14.4,10.1-9.3,17.5l284.7,422.1c20.5,30.4,20.5,70.2,0,100.7l-284.7,422.1
+                    c-5,7.5,0.3,17.5,9.3,17.5H5016c39.9,0,77.2-19.8,99.5-52.9l159.4-236.4c20.8-30.9,66.2-30.9,87,0L5521.3,943
+                    c22.3,33.1,59.6,52.9,99.5,52.9H5765c9,0,14.4-10.1,9.3-17.5l-284.7-422.1c-20.5-30.4-20.5-70.2,0-100.7l284.7-422.1
+                    C5779.4,26.1,5774,16,5765,16z"></path>
+              <path fill="#FFFFFF" d="M4796.2,16h-85c-43.2,0-79.3,30.4-88,71c-75.8-57.5-170.4-87-273-87
+                    c-248.9,0-450.7,173.2-450.7,500s201.8,500,450.7,500c101.9,0,195.9-29,271.4-85.8c4.2,45.8,42.7,81.8,89.6,81.8h85
+                    c8.3,0,15-6.7,15-15V31C4811.2,22.7,4804.5,16,4796.2,16z M4350.2,813.9c-148.6,0-269.1-108.7-269.1-313.9
+                    s120.5-313.9,269.1-313.9s269.1,108.7,269.1,313.9S4498.8,813.9,4350.2,813.9z"></path>
+            </g>
+            <g>
+              <path fill="#FFFFFF" d="M5856.6,122.1c-10.4,0-19.2-2.3-26.2-7c-7.1-4.6-12.1-11-15-19l17.7-10.4
+                    c4.1,10.7,12.2,16.1,24.2,16.1c5.8,0,10-1.1,12.8-3.1c2.7-2.1,4-4.7,4-8c0-3.7-1.7-6.6-5-8.6s-9.2-4.3-17.7-6.7
+                    c-4.7-1.4-8.7-2.8-11.9-4.2c-3.3-1.4-6.5-3.3-9.8-5.6s-5.7-5.3-7.4-8.9c-1.7-3.6-2.5-7.8-2.5-12.6c0-9.5,3.4-17.1,10.1-22.7
+                    c6.8-5.6,14.9-8.5,24.4-8.5c8.5,0,16,2.1,22.4,6.2c6.5,4.2,11.5,9.9,15.1,17.3l-17.4,10c-4.2-9-10.9-13.5-20.1-13.5
+                    c-4.3,0-7.7,1-10.1,2.9c-2.5,2-3.7,4.5-3.7,7.6c0,3.3,1.4,6,4.1,8c2.7,2.1,8,4.3,15.8,6.7c3.2,1,5.6,1.8,7.3,2.3
+                    c1.7,0.6,3.9,1.4,6.8,2.6c2.8,1.2,5,2.2,6.6,3.2c1.5,1,3.3,2.4,5.3,4.1c2,1.7,3.5,3.4,4.6,5.2c1,1.8,2,4,2.7,6.5s1.1,5.3,1.1,8.3
+                    c0,9.7-3.5,17.4-10.6,23.1C5877.1,119.3,5867.9,122.1,5856.6,122.1z"></path>
+              <path fill="#FFFFFF" d="M6017.7,15v105h-20.5V51.9l-29.5,48.8h-2.4l-29.5-48.6v68h-20.7V15h21.3l30.2,49.6l30-49.6
+                    C5996.6,15,6017.7,15,6017.7,15z"></path>
+            </g>
+          </g>
+        </svg>
+      </a>
+    </div>
+
+
+
+    <!-- Usuario -->
+    <div class="user">
+      <span class="material-symbols-outlined" id="user">account_circle</span>
+    </div>
+  </header>
+
+  <!--Fim cabeçalho-->
+
+  <!-- slider starts  -->
+  <section id="home" class="iq-main-slider p-0">
+    <div id="home-slider" class="slider m-0 p-0">
+      <div class="slide slick-bg s-bg-1">
+        <div class="container-fluid position-relative h-100">
+          <div class="slider-inner h-100">
+            <div class="row align-items-center h--100">
+              <div class="col-xl-6 col-lg-12 col-md-12">
+                <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                  data-delay-in="0.6">
+                  Spider Man: No Way Home
+                </h1>
+                <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft"
+                  style="opacity: 1">
+                  <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                    <ul
+                      class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star-half" id="color_gold_star"></i></li>
+                    </ul>
+                    <span class="text-white ml-2">8.2(imbd)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                    <span class="badge badge-secondary p-2">12+</span>
+                    <span class="ml-3">2h 21min</span>
+                  </div>
+                </div>
+                <p data-animation-in="fadeInUp">
+                  Peter Parker has his secret identity revealed and asks Doctor Strange for help. When a spell to
+                  reverse the event doesn't go as expected, Spider-Man and his fellow Avengers must face enemies from
+                  across the multiverse.
+                </p>
+                <div class="trending-list" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <div class="text-primary title starring">
+                    Starring :
+                    <span class="text-body">Tom Holland, Tobey Maguire, Andrew Garfield</span>
+                  </div>
+                  <div class="text-primary title genres">
+                    Genres : <span class="text-body">Action / Science fiction</span>
+                  </div>
+                  <div class="text-primary title tag">
+                    Tags :
+                    <span class="text-body">Action, Adventure, Science fiction</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+              <a href="video/trailer.mp4" class="video-open playbtn">
+                <img src="images/play.png" class="play" alt="" />
+                <span class="w-trailor">Watch the movie</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="slide slick-bg s-bg-2">
+        <div class="container-fluid position-relative h-100">
+          <div class="slider-inner h-100">
+            <div class="row align-items-center h--100">
+              <div class="col-xl-6 col-lg-12 col-md-12">
+                <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                  data-delay-in="0.6"> Joker </h1>
+                <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft"
+                  style="opacity: 1">
+                  <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                    <ul
+                      class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star-half" id="color_gold_star"></i></li>
+                    </ul>
+                    <span class="text-white ml-2">8.4(imbd)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                    <span class="badge badge-secondary p-2">16+</span>
+                    <span class="ml-3">2h 2min</span>
+                  </div>
+                </div>
+                <p data-animation-in="fadeInUp">
+                  Isolated, intimidated and disregarded by society, failed comedian Arthur Fleck begins his path as a
+                  criminal mastermind after murdering three men in the middle of the subway. His action starts a popular
+                  movement against Gotham City's elite, of which Thomas Wayne is its greatest representative.
+                </p>
+                <div class="trending-list" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <div class="text-primary title starring">
+                    Starring :
+                    <span class="text-body">Joaquin Phoenix, Robert De Niro, Zazie Beetz</span>
+                  </div>
+                  <div class="text-primary title genres">
+                    Genres : <span class="text-body">Thriller/Crime</span>
+                  </div>
+                  <div class="text-primary title tag">
+                    Tags :
+                    <span class="text-body">Thriller, Crime, Psycho</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+              <a href="video/trailer.mp4" class="video-open playbtn">
+                <img src="images/play.png" class="play" alt="" />
+                <span class="w-trailor">Watch the movie</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide slick-bg s-bg-3">
+        <div class="container-fluid position-relative h-100">
+          <div class="slider-inner h-100">
+            <div class="row align-items-center h--100">
+              <div class="col-xl-6 col-lg-12 col-md-12">
+                <h1 class="slider-text big-title title text-uppercase" data-animation-in="fadeInLeft"
+                  data-delay-in="0.6"> The Conjuring </h1>
+                <div class="d-flex flex-wrap align-items-center fadeInLeft animated" data-animation-in="fadeInLeft"
+                  style="opacity: 1">
+                  <div class="slider-ratting d-flex align-items-center mr-4 mt-2 mt-md-3">
+                    <ul
+                      class="ratting-start p-0 m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star" id="color_gold_star"></i></li>
+                      <li><i class="fa fa-star-half" id="color_gold_star"></i></li>
+                    </ul>
+                    <span class="text-white ml-2">7.5(imbd)</span>
+                  </div>
+                  <div class="d-flex align-items-center mt-2 mt-md-3">
+                    <span class="badge badge-secondary p-2">16+</span>
+                    <span class="ml-3">1h 52min</span>
+                  </div>
+                </div>
+                <p data-animation-in="fadeInUp">
+                  Paranomal investigators Ed and Lorraine Warren work to help
+                  a family terrorized by a dark presence in their farmhouse.
+                </p>
+                <div class="trending-list" data-animation-in="fadeInUp" data-delay-in="1.2">
+                  <div class="text-primary title starring">
+                    Starring :
+                    <span class="text-body">Patrick Wilson, Vera Farminga, Ron Livingston</span>
+                  </div>
+                  <div class="text-primary title genres">
+                    Genres : <span class="text-body">Horror</span>
+                  </div>
+                  <div class="text-primary title tag">
+                    Tags :
+                    <span class="text-body">Horror, Mystery, Thriller</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-12 col-md-12 trailor-video">
+              <a href="video/trailer.mp4" class="video-open playbtn">
+                <img src="images/play.png" class="play" alt="" />
+                <span class="w-trailor">Watch the movie</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- slider ends -->
+
+
+
+
+
+
+
+
+  <!-- main content starts  -->
+  <div class="main-content">
+    <!-- favorite section starts   -->
+
+    <section id="iq-favorites">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 overflow-hidden">
+            <div class="iq-main-header d-flex align-items-center justify-content-between">
+              <h4 class="main-title">Top Picks For You</h4>
+              <a href="#" class="iq-view-all">View All</a>
+            </div>
+            <div class="favorite-contens">
+              <ul class="favorites-slider list-inline row p-0 mb-0">
+                <!-- slide item 1 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/favorite/Barbie.jpg" class="img-fluid" alt="Barbie" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#"> Barbie </a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 2 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/favorite/Batman.jpg" class="img-fluid" alt="Batman" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#" id="txt_tittle_movie"> Batman </a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 3 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/favorite/Sherlock.jpg" class="img-fluid" alt="Sherlock" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title" id="txt_tittle_movie">
+                        <a href="#">Sherlock</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 4 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/favorite/justiceleague.jpg" class="img-fluid" alt="Liga da Justiça" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title" id="txt_tittle_movie">
+                        <a href="#">Liga da Justiça</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 5 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/favorite/f5.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">The middle</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- favourite section ends -->
+
+    <!-- upcoming contents section starts  -->
+    <section id="iq-upcoming-movie">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 overflow-hidden">
+            <div class="iq-main-header d-flex align-items-center justify-content-between">
+              <h4 class="main-title">Popular Movies</h4>
+              <a href="#" class="iq-view-all">View All</a>
+            </div>
+            <div class="favorite-contens">
+              <ul class="favorites-slider list-inline row p-0 mb-0">
+                <!-- slide item 1 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/popular/u1.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">Dark Knight</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 2 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/popular/u2.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">No way home</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 3 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/popular/u3.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">Oppenheimer</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 4 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/popular/u4.png" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">The Equalizer</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 5 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/popular/u5.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">The Hangover</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- upcoming contents section ends -->
+
+    <!-- top ten trending  -->
+
+
+    <section id="iq-suggested" class="s-margin">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 overflow-hidden">
+            <div class="iq-main-header d-flex align-items-center justify-content-between">
+              <h4 class="main-title">Suggested Sports</h4>
+              <a href="#" class="iq-view-all">View All</a>
+            </div>
+            <div class="favorite-contens">
+              <ul class="favorites-slider list-inline row p-0 mb-0">
+                <!-- slide item 1 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/suggested/01.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">NBA</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 2 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/suggested/02.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#"> VolleyBall </a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 3 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/suggested/03.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">Champions league</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 4 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/suggested/04.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">Tenis</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 5 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/suggested/05.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#"> Golf </a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax section  -->
+    <section id="parallex" class="parallax-window">
+      <div class="container-fluid h-100">
+        <div class="row align-items-center justify-content-center h-100 parallaxt-details">
+          <div class="col-lg-4 r-mb-23">
+            <div class="text-left">
+              <a href="javascript:void(0)">
+                <h1 class="parallax-heading">Avatar</h1>
+              </a>
+              <div class="parallax-ratting d-flex align-items-center mt-3 mb-3">
+                <ul
+                  class="ratting-start p-o m-0 list-inline text-primary d-flex align-items-center justify-content-left">
+                  <li>
+                    <a href="#" class="text-primary"><i class="fa fa-star"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-primary"><i class="pl-2 fa fa-star"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-primary"><i class="pl-2 fa fa-star"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-primary"><i class="pl-2 fa fa-star"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-primary"><i class="pl-2 fa fa-star-half-o"></i></a>
+                  </li>
+                </ul>
+                <span class="text-white ml-3">7.8(Imbd)</span>
+              </div>
+              <div class="movie-time d-flex align-items-center mb-3">
+                <div class="badge badge-secondary p-1 mr-2">9+</div>
+                <span class="text-white">2h 42min</span>
+              </div>
+              <p>
+                A paraplegic Marine dispatched to the moon Pandora on a unique
+                mission becomes torn between following his orders and
+                protecting the world he feels is his home.
+              </p>
+              <div class="parallax-buttons">
+                <a href="#" class="btn btn-hover">Play Now</a>
+                <a href="#" class="btn btn-link">More Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="parallax-img">
+              <a href="#"><img src="images/parallax/avatar.jpg" alt="" class="img-fluid w-100" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="iq-suggested" class="s-margin">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 overflow-hidden">
+            <div class="iq-main-header d-flex align-items-center justify-content-between">
+              <h4 class="main-title">Recommended For You</h4>
+              <a href="#" class="iq-view-all">View All</a>
+            </div>
+            <div class="favorite-contens">
+              <ul class="favorites-slider list-inline row p-0 mb-0">
+                <!-- slide item 1 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/tvthrillers/01.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">The Martian</a>
+                      </h6>
+
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 2 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/tvthrillers/02.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">Dark kgnight ressurge</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- slide item 3 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/tvthrillers/03.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">Peaky blinders</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- slide item 4 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/tvthrillers/04.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">007</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+                <!-- slide item 5 -->
+                <li class="slide-item">
+                  <div class="block-images position-relative">
+                    <div class="img-box">
+                      <img src="images/tvthrillers/05.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="block-description">
+                      <h6 class="iq-title">
+                        <a href="#">Bojack Horseman</a>
+                      </h6>
+                      <div class="hover-buttons">
+                        <span class="btn btn-hover iq-button">
+                          <i class="fa fa-play mr-1"></i>
+                          Play Now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+  <!-- main content ends  -->
+
+
+
+  <!-- js files  -->
+
+  <script src="js/framework/jquery-3.4.1.min.js"></script>
+  <script src="js/framework/popper.min.js"></script>
+  <script src="js/framework/bootstrap.min.js"></script>
+  <script src="js/framework/slick.min.js"></script>
+  <script src="js/framework/owl.carousel.min.js"></script>
+  <script src="js/framework/select2.min.js"></script>
+  <script src="js/framework/jquery.magnific-popup.min.js"></script>
+  <script src="js/framework/slick-animation.min.js"></script>
+
+  <script src="js/catalago.js"></script>
+</body>
+
+</html>

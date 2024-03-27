@@ -9,7 +9,7 @@ chave.textContent = username
 const card = document.getElementById("card_perfil")
 
 function perfilClick(){
-    window.location.assign("catalago.html")
+    window.location.assign("catalogo.html")
 }
 
 card.onclick = perfilClick
