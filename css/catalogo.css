@@ -1698,7 +1698,7 @@ header{
     
 }
 
-a {
+.menu_conteudo {
     color: white;
     text-decoration: none;
     display: block;
